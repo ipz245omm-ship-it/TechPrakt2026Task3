@@ -1,0 +1,56 @@
+{
+  "info": {
+    "name": "Laravel CRUD",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET answers",
+      "request": {
+        "method": "GET",
+        "url": "http://127.0.0.1:8000/api/answers"
+      }
+    },
+    {
+      "name": "POST answer",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"answer\": \"Hello\" }"
+        },
+        "url": "http://127.0.0.1:8000/api/answers"
+      }
+    },
+    {
+      "name": "PATCH answer",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"answer\": \"Updated\" }"
+        },
+        "url": "http://127.0.0.1:8000/api/answers/1"
+      }
+    },
+    {
+      "name": "DELETE answer",
+      "request": {
+        "method": "DELETE",
+        "url": "http://127.0.0.1:8000/api/answers/1"
+      }
+    }
+  ]
+}
